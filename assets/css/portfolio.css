@@ -1,0 +1,346 @@
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+  font-family: "Roboto Mono", sans-serif;
+  /* height: 100%; */
+
+}
+
+
+/* 5. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* css reset end */
+
+/* checkbox */
+.toggle-btn {
+  position: absolute;
+  top: 5px;
+  right: 8px;
+  z-index: 2;
+  display: none;
+  width: 100%;
+}
+
+.checkbox {
+  position: absolute;
+  z-index: 3;
+  right: 0;
+  top: 0;
+  
+}
+
+.logo {
+  display: flex;
+  gap: 16px;
+}
+
+.logo img {
+  width: 24px;
+  height: 24px;
+  
+}
+
+
+.container-top {
+  position: relative;
+  width: 100%;
+}
+
+
+/* Header */
+.header-desktop {
+  display: none;
+}
+
+
+.header-mobile {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+}
+
+
+.hamburger .nav-mobile {
+  display: none;
+}
+
+.hamburger .toggle-btn:checked ~ .nav-mobile {
+  display: block;
+}
+
+.header-mobile {
+  position: absolute;
+  width: 100%;
+  color: white;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 16px;
+}
+
+.header-mobile a {
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.nav-desktop {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.nav-desktop li {
+  margin: 0 15px;
+}
+
+.nav-desktop a {
+  color: white;
+  text-decoration: none;
+}
+/* carousel area */
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 100%;
+  height: 100%; 
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+}
+
+/* Carousel Butttons */
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 32px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+  object-fit: cover;
+}
+
+.carousel-button.prev {
+  left: 10px;
+}
+
+.carousel-button.next {
+  right: 10px;
+}
+
+
+/* about area */
+.content {
+  margin-top: 40px;
+  padding-inline: 16px;
+} */ 
+
+.about {
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+}
+
+h3 {
+  text-align: center;
+  color:rgb(34, 31, 31);
+}
+
+.about p {
+  font-size: 14px;
+  color: rgb(63, 54, 54);
+  margin-block: 24px;
+}
+
+.my-pic {
+  width: 200px;
+  height: 200px;
+  margin-inline: auto;
+}
+
+
+/* about area end */
+
+/* certificate area */
+
+.certificate-area {
+  background-color: rgb(245, 245, 245);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+.certificate-area p {
+  font-size: 12px;
+  color: rgb(124, 112, 112);
+}
+.certificate-area h4 {
+  text-align: center;
+  color: rgb(34, 31, 31);
+}
+
+/* project area */
+
+.project-area {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+}
+
+.project {
+ justify-items: center;
+ background-color: aqua;
+ padding-block: 16px;
+}
+.project img {
+  width: 290px;
+}
+
+.project p {
+  text-align: center;
+ }
+
+.icon-area img {
+  width: 24px;
+  height: 24px;
+}
+
+.icon {
+  height: 24px;
+  width: 24px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+.more-projects a {
+  display: block;
+  padding: 16px;
+  background-color: rgb(37, 87, 238);
+  width: 310px;
+  color: white;
+  border-radius: 16px;
+  margin-block: 16px;
+}
+
+/* project area end */
+
+/* troll area */
+
+.troll-area {
+  text-align: center;
+  margin-block: 24px;
+} 
+
+.troll-area button {
+  padding: 8px;
+  margin-top: 8px;
+}
+
+/* troll area end */
+
+/* footer */
+
+footer {
+  margin-top: 24px;
+  background-color: rgb(34, 32, 32);
+  color: white;
+  text-align: center;
+  padding: 16px;
+}
+
+.upper-footer img {
+  width: 24px;
+  height: 24px;
+}
+
+.upper-footer p {
+  font-size: 14px;
+  color: gray;
+}
+
+
+.mail {
+  display: flex;
+  gap: 8px;
+}
+
+.phone {
+  display: flex;
+  gap: 8px;
+  margin-block: 20px;
+}
+
+.icon-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+
