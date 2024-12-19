@@ -1,3 +1,7 @@
+const btn = document.querySelector('.btn');
+const TrollArea = document.querySelector('.troll-area');
+
+
 function setCarousel(){
   $(document).ready(function(){
     // Carousel'i başlat
