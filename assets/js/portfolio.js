@@ -4,11 +4,11 @@ function setCarousel(){
     $('.carousel-images').slick({
       dots: true,            // Altında noktalar gösterilsin
       infinite: true,        // Sonsuz kaydırma
-      speed: 300,            // Geçiş hızı
+      speed: 400,            // Geçiş hızı
       slidesToShow: 1,       // Her seferinde 1 resim göster
       slidesToScroll: 1,     // Her seferinde 1 resim kaydır
       autoplay: true,        // Otomatik oynatma
-      autoplaySpeed: 2000,   // Her iki saniyede bir kaydırma
+      autoplaySpeed: 8000,   // Her iki saniyede bir kaydırma
       arrows: true,          // Ok butonları
     });
   });

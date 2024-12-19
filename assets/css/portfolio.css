@@ -147,53 +147,19 @@ a {
   text-decoration: none;
 }
 /* carousel area */
-.carousel-track {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
 
-.carousel-item {
-  min-width: 100%;
-  height: 100%; 
-  display: flex;
-  justify-content: center;
-}
-
-.carousel-item img {
+.carousel-images img {
   width: 100%;
-  height: 50%;
+  height: 100vh;
+  display: block;
   object-fit: cover;
 }
-
-/* Carousel Butttons */
-.carousel-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: transparent;
-  color: white;
-  border: none;
-  font-size: 32px;
-  padding: 10px;
-  cursor: pointer;
-  z-index: 10;
-  object-fit: cover;
-}
-
-.carousel-button.prev {
-  left: 10px;
-}
-
-.carousel-button.next {
-  right: 10px;
-}
-
 
 /* about area */
 .content {
   margin-top: 40px;
   padding-inline: 16px;
-} */ 
+} 
 
 .about {
   text-align: center;
