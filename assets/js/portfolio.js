@@ -1,35 +1,18 @@
-let currentIndex = 0;
-const carouselTrack = document.querySelector('.carousel-track');
-const carouselItems = document.querySelectorAll('.carousel-item');
-const btn = document.querySelector('.btn');
-const TrollArea = document.querySelector('.troll-area');
-const totalItems = carouselItems.length;
-
-document.querySelector('.carousel-button.next').addEventListener('click', () => {
-  if (currentIndex < totalItems - 1) {
-    currentIndex++;
-  } else {
-    currentIndex = 0; // Sonraki resim yoksa başa dön
-  }
-  updateCarousel();
-});
-
-document.querySelector('.carousel-button.prev').addEventListener('click', () => {
-  if (currentIndex > 0) {
-    currentIndex--;
-  } else {
-    currentIndex = totalItems - 1; // Önceki resim yoksa sona dön
-  }
-  updateCarousel();
-});
-
-function updateCarousel() {
-  const offset = -currentIndex * 100; // Karusel kaydırma işlemi
-  carouselTrack.style.transform = `translateX(${offset}%)`;
+function setCarousel(){
+  $(document).ready(function(){
+    // Carousel'i başlat
+    $('.carousel-images').slick({
+      dots: true,            // Altında noktalar gösterilsin
+      infinite: true,        // Sonsuz kaydırma
+      speed: 300,            // Geçiş hızı
+      slidesToShow: 1,       // Her seferinde 1 resim göster
+      slidesToScroll: 1,     // Her seferinde 1 resim kaydır
+      autoplay: true,        // Otomatik oynatma
+      autoplaySpeed: 2000,   // Her iki saniyede bir kaydırma
+      arrows: true,          // Ok butonları
+    });
+  });
 }
-
-
-
 
 function addGif() {
   btn.addEventListener("click", function() {
@@ -44,4 +27,11 @@ function addGif() {
   });
 }
 
-addGif();
+
+
+function init() {
+  setCarousel();
+  addGif();
+}
+
+init();
