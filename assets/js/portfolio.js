@@ -12,8 +12,8 @@ function setCarousel(){
       slidesToShow: 1,       // Her seferinde 1 resim göster
       slidesToScroll: 1,     // Her seferinde 1 resim kaydır
       autoplay: true,        // Otomatik oynatma
-      autoplaySpeed: 8000,   // Her iki saniyede bir kaydırma
-      arrows: true,          // Ok butonları
+      autoplaySpeed: 2000,   // Her iki saniyede bir kaydırma
+      arrows: false,          // Ok butonları
     });
   });
 }
@@ -28,14 +28,34 @@ function addGif() {
     gif.height = 200;
     gif.style.marginInline = 'auto';
     TrollArea.appendChild(gif);
+    TrollArea.classList.remove("hearts");
   });
 }
 
+function addTransitionPic() {
+  document.addEventListener("DOMContentLoaded", () => {
+    const aboutSection = document.querySelector(".about");
+    const myPic = document.querySelector(".my-pic");
+  
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          myPic.style.opacity = "1";
+          myPic.style.transform = "translateY(0)";
+          observer.unobserve(entry.target); 
+        }
+      });
+    }, {
+      threshold: 0.5,
+    });
+    observer.observe(aboutSection);
+  });
+}
 
 
 function init() {
   setCarousel();
   addGif();
+  addTransitionPic();
 }
-
 init();
