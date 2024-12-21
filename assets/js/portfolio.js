@@ -52,9 +52,20 @@ function addTransitionPic() {
 }
 
 
+function setParallax() {
+  window.addEventListener('scroll', function() {
+    const section = document.getElementById('parallax');
+    const scrollPosition = window.scrollY;
+  
+    // Arka planın kayma hızını ayarlayın
+    section.style.backgroundPosition = 'center ' + (scrollPosition * 0.5) + 'px';
+  });
+}
+
 function init() {
   setCarousel();
   addGif();
   addTransitionPic();
+  setParallax();
 }
 init();
