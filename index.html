@@ -15,40 +15,39 @@
   <title>Portfolio</title>
 </head>
 <body>
+  <header class="header-desktop">
+    <ul class="nav-desktop">
+      <li><a href="">About</a></li>
+      <li><a href="">Projects</a></li>
+      <li><a href="">Contact</a></li>
+    </ul>
+  </header> 
+
+  <div class="header-mobile">
+    <div class="logo">
+      <img src="assets/images/icons/mk-icon.svg" alt="">
+      <a href="">MAKO KYILMAZ</a>
+    </div>
+    <div class="hamburger mobile">
+      <input type="checkbox" name="checkbox" id="checkbox" class="toggle-btn">
+      <label for="checkbox" class="checkbox">
+        <img src="assets/images/icons/hamburger-menu.svg" class="hamburger-icon">
+      </label>
+      <ul class="nav-mobile">
+        <li><a href="#about">About</a></li>
+        <hr>
+        <li><a href="#certificates">Certificates</a></li>
+        <hr>
+        <li><a href="#projects">Projects</a></li>
+        <hr>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>       
+  </div>
   <div class="container-top">
     <!-- Careosel Start -->
     <div class="carousel">
       <!-- Header Start -->
-      <header class="header-desktop">
-        <ul class="nav-desktop">
-          <li><a href="">About</a></li>
-          <li><a href="">Projects</a></li>
-          <li><a href="">Contact</a></li>
-        </ul>
-      </header> 
-  
-      <div class="header-mobile">
-        <div class="logo">
-          <img src="assets/images/icons/mk-icon.svg" alt="">
-          <a href="">MAKO KYILMAZ</a>
-        </div>
-        <div class="hamburger mobile">
-          <input type="checkbox" name="checkbox" id="checkbox" class="toggle-btn">
-          <label for="checkbox" class="checkbox">
-            <img src="assets/images/icons/hamburger-menu.svg" class="hamburger-icon">
-          </label>
-          <ul class="nav-mobile">
-            <li><a href="">About</a></li>
-            <hr>
-            <li><a href="">Certificates</a></li>
-            <hr>
-            <li><a href="">Projects</a></li>
-            <hr>
-            <li><a href="">Contact</a></li>
-            <hr>
-          </ul>
-        </div>       
-      </div>
       <!-- Header End -->
   
       <!-- Carousel images -->
@@ -60,7 +59,7 @@
   </div>
   
   <div class="content">
-    <div class="about">
+    <div id="about" class="about">
       <h3>About Me</h3>
       <img class="my-pic" src="assets/images/me.jpg">
       <p>Hi Everyone. I'm Mehmet Akif and i'm Frontend Developer. I decided to become a software developer thanks to my passion for computers that started from my childhood. 
@@ -68,7 +67,7 @@
         <p>My hobbies are BodyBuilding, reading(a lottt..) and develop myself for everything.</p>
     </div>
   
-    <div class="certificate-area">
+    <div id="certificates" class="certificate-area">
       <h4>My Certificates</h4>
       <p>Algorithm Programming and Introduction to Data</p>
       <p>Advanced Python Programming From Zero</p>
@@ -95,7 +94,7 @@
       </ul>
     </div>
 
-    <div class="project-area">
+    <div id="projects" class="project-area">
       <h4>Projects</h4>
 
       <div class="project">
@@ -163,7 +162,7 @@
     <a class="" href="">Click Here For More projects</a>
   </div>
     
-  <footer>
+  <footer id="contact">
     <div class="upper-footer">
       <div class="mail">
         <img src="assets/images/icons/mail.svg">

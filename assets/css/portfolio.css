@@ -3,6 +3,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* 2. Remove default margin */
 * {
   margin: 0;
@@ -17,6 +21,8 @@ body {
   font-family: "Roboto Mono", sans-serif;
   /* height: 100%; */
 }
+
+
 
 
 /* 5. Improve media defaults */
@@ -111,17 +117,13 @@ a {
 
 .hamburger-icon {
   width: 46px;
-  padding-block: 24px;
+  padding-block: 16px;
   padding-right: 16px;
 }
 
-.nav-desktop li {
-  margin: 0 15px;
-}
 
 .nav-desktop a {
   color: white;
-  text-decoration: none;
 }
 .header-desktop {
   display: none;
@@ -136,15 +138,16 @@ a {
 }
 
 .header-mobile {
-  position: absolute;
+  position: sticky;
+  top: 0;
   width: 100%;
   color: white;
-  z-index: 10;
+  z-index: 999999;
   display: flex;
   justify-content: space-between;
   padding-inline: 16px;
   background-color: black;
-  padding-block: 24px;
+  padding-block: 16px;
   align-items: center;
 }
 
@@ -178,6 +181,7 @@ a {
   font-style: italic;
 }
 
+
 .nav-mobile ul {
   padding: 48px;
 }
@@ -199,6 +203,7 @@ a {
 
 
 /* carousel area */
+
 
 .carousel-images img {
   width: 100%;
@@ -568,4 +573,6 @@ footer {
 
 
 
+
+/* tablet query */
 

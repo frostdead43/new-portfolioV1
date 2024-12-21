@@ -4,7 +4,6 @@ const TrollArea = document.querySelector('.troll-area');
 
 function setCarousel(){
   $(document).ready(function(){
-    // Carousel'i başlat
     $('.carousel-images').slick({
       dots: true,            // Altında noktalar gösterilsin
       infinite: true,        // Sonsuz kaydırma
@@ -12,7 +11,7 @@ function setCarousel(){
       slidesToShow: 1,       // Her seferinde 1 resim göster
       slidesToScroll: 1,     // Her seferinde 1 resim kaydır
       autoplay: false,        // Otomatik oynatma
-      autoplaySpeed: 2000,   // Her iki saniyede bir kaydırma
+      autoplaySpeed: 8000,   // Her iki saniyede bir kaydırma
       arrows: false,          // Ok butonları
     });
   });
