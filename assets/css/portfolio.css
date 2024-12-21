@@ -48,6 +48,14 @@ ul, ol {
   list-style: none;
 }
 
+hr {
+  width: 100%;
+  opacity: 0.2;
+  color: white;
+  margin-inline: auto;
+  margin-top: 8px;
+}
+
 a {
   text-decoration: none;
 }
@@ -84,6 +92,8 @@ a {
   
 }
 
+/* checkbox end */
+
 
 .container-top {
   position: relative;
@@ -92,19 +102,30 @@ a {
 
 
 /* Header */
+.nav-desktop {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.hamburger-icon {
+  width: 46px;
+  padding-block: 24px;
+  padding-right: 16px;
+}
+
+.nav-desktop li {
+  margin: 0 15px;
+}
+
+.nav-desktop a {
+  color: white;
+  text-decoration: none;
+}
 .header-desktop {
   display: none;
 }
-
-
-.header-mobile {
-  position: absolute;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 16px;
-}
-
 
 .hamburger .nav-mobile {
   display: none;
@@ -122,29 +143,61 @@ a {
   display: flex;
   justify-content: space-between;
   padding-inline: 16px;
+  background-color: black;
+  padding-block: 24px;
+  align-items: center;
 }
+
+.nav-mobile {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  right: 0;
+  width: 100%;
+  padding: 16px;
+  animation: slide 0.5s ease-in-out;
+}
+
+@keyframes slide {
+  from {
+    transform: translateY(-120px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+
+.nav-mobile li {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-top: 20px;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.nav-mobile ul {
+  padding: 48px;
+}
+
+.logo img {
+  width: 24px;
+  height: 24px;
+  z-index: 11;
+}
+
 
 .header-mobile a {
   color: white;
   font-size: 16px;
   text-decoration: none;
+  z-index: 10;
 }
 
-.nav-desktop {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  padding: 0;
-}
 
-.nav-desktop li {
-  margin: 0 15px;
-}
 
-.nav-desktop a {
-  color: white;
-  text-decoration: none;
-}
 /* carousel area */
 
 .carousel-images img {
@@ -239,7 +292,7 @@ h3 {
 .project img {
   width: 290px;
   border-radius: 8px;
-  
+
 }
 
 .project p {
@@ -494,6 +547,15 @@ footer {
   margin-block: 20px;
 }
 
+.upper-footer span {
+  color: gray;
+  font-size: 16px;
+}
+
+.copyrigth {
+  font-size: 32px;
+}
+
 /* footer end */
 
 .icon-area {
@@ -505,9 +567,5 @@ footer {
 }
 
 
-.logo img {
-  width: 24px;
-  height: 24px;
-}
 
 

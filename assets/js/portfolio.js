@@ -11,7 +11,7 @@ function setCarousel(){
       speed: 400,            // Geçiş hızı
       slidesToShow: 1,       // Her seferinde 1 resim göster
       slidesToScroll: 1,     // Her seferinde 1 resim kaydır
-      autoplay: true,        // Otomatik oynatma
+      autoplay: false,        // Otomatik oynatma
       autoplaySpeed: 2000,   // Her iki saniyede bir kaydırma
       arrows: false,          // Ok butonları
     });
