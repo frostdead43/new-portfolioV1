@@ -5,14 +5,14 @@ const TrollArea = document.querySelector('.troll-area');
 function setCarousel(){
   $(document).ready(function(){
     $('.carousel-images').slick({
-      dots: true,            // Altında noktalar gösterilsin
-      infinite: true,        // Sonsuz kaydırma
-      speed: 400,            // Geçiş hızı
-      slidesToShow: 1,       // Her seferinde 1 resim göster
-      slidesToScroll: 1,     // Her seferinde 1 resim kaydır
-      autoplay: false,        // Otomatik oynatma
-      autoplaySpeed: 8000,   // Her iki saniyede bir kaydırma
-      arrows: false,          // Ok butonları
+      dots: true,            
+      infinite: true,       
+      speed: 400,           
+      slidesToShow: 1,      
+      slidesToScroll: 1,    
+      autoplay: false,       
+      autoplaySpeed: 8000,   
+      arrows: false,     
     });
   });
 }
@@ -56,11 +56,10 @@ function setParallax() {
   window.addEventListener('scroll', function() {
     const section = document.getElementById('parallax');
     const scrollPosition = window.scrollY;
-  
-    // Arka planın kayma hızını ayarlayın
     section.style.backgroundPosition = 'center ' + (scrollPosition * 0.5) + 'px';
   });
 }
+
 
 function init() {
   setCarousel();
