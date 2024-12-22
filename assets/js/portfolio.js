@@ -61,6 +61,8 @@ function setParallax() {
 }
 
 
+
+
 function init() {
   setCarousel();
   addGif();
