@@ -220,29 +220,27 @@ a {
 
 
 .carousel-text {
-  color: rgb(0, 0, 0);
+  color: rgba(0, 0, 0, 0.5);
   position: absolute;
-  top: 15%;
+  top: 25%;
   margin-inline: 16px;
   font-size: 18px;
   overflow: hidden;
   letter-spacing: 2px;
   font-style: italic;
   font-weight: 500;
-  opacity: 0.5;
   transform: translateX(-100px);
   animation: slideDown 1s ease-out forwards; 
 }
 
 .carousel-text2 {
-  color: rgb(0, 0, 0);
+  color: rgba(0, 0, 0, 0.5);
   position: absolute;
   top: 60%;
   margin-left: 160px;
   font-size: 18px;
   font-style: italic;
   font-weight: 500;
-  opacity: 0.5;
   transform: translateX(200px);
   animation: slideIn 1s ease-out forwards; 
 }
