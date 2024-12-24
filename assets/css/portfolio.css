@@ -287,6 +287,7 @@ a {
 h3 {
   text-align: center;
   color:rgb(34, 31, 31);
+  padding-top: 16px;
 }
 
 .about p {
@@ -829,6 +830,10 @@ footer {
     margin-inline: 100px;
   }
 
+  h3 {
+    font-size: 24px;
+  }
+
   .about p {
     font-size: 20px;
     margin-inline: 140px;
@@ -846,6 +851,11 @@ footer {
 
   .certificate-area p {
     font-size: 18px;
+  }
+
+  .troll-area img {
+    height: 300px;
+    width: 400px;
   }
 
   .troll-area h6 {
@@ -868,13 +878,14 @@ footer {
   }
 
   .project:hover {
-    transform: scale(1.05); /* Hafif büyüme efekti */
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Daha belirgin gölge */
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); 
   }
 
   .more-projects a {
     font-size: 24px;
   }
+
 
   .resume-area h2 {
     font-size: 40px;
