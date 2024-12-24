@@ -339,11 +339,19 @@ h3 {
   flex-direction: column;
   justify-content: flex-start;
   gap: 16px;
+
+}
+
+.project img {
+  width: 100%; /* Kart genişliğini doldurur */
+
+  object-fit: cover; /* Görüntüyü kırpmadan kutuya sığdırır */
+  border-radius: 8px; /* Köşelere hafif yuvarlama eklerseniz */
 }
 
 .project-name {
   font-size: 24px;
-  text-align: center;
+  text-align: left;
   margin-bottom: 24px;
 }
 
@@ -355,10 +363,11 @@ h3 {
 }
 
 .project {
- justify-items: center;
- padding-block: 16px;
-background-color: F0EFF4;
- box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  justify-items: center;
+  padding-block: 16px;
+  background-color: rgb(240, 239, 244);
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 /* tags */
@@ -390,11 +399,6 @@ background-color: F0EFF4;
   box-shadow:  0 0 4px 0 rgba(109, 107, 107, 0.945);
 }
 
-.project img {
-  object-fit: contain;
-  border-radius: 8px;
-
-}
 
 .project p {
   text-align: center;
@@ -751,6 +755,12 @@ footer {
     padding: 24px;
   }
 
+  .project img {
+    height: 250px;
+    object-fit: contain;
+    display: block;
+  }
+
 
   .flex img {
     width: 24px;
@@ -807,9 +817,41 @@ footer {
   .content {
     padding-inline: 80px;
   }
+
+  .about {
+    margin-inline: 100px;
+  }
+
+  .about p {
+    font-size: 20px;
+  }
+
+  .certificate-area {
+    margin-inline: 100px;
+    margin-block: 100px;
+  }
+
+  .certificate-area p {
+    font-size: 18px;
+  }
+
   .project-area {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+
+  .project {
+    height: auto; 
+    padding: 16px; 
+    border-radius: 8px;
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .project:hover {
+    transform: scale(1.05); /* Hafif büyüme efekti */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Daha belirgin gölge */
   }
 
 }
