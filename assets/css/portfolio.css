@@ -340,7 +340,6 @@ h3 {
   flex-direction: column;
   justify-content: flex-start;
   gap: 16px;
-
 }
 
 .project img {
@@ -357,7 +356,9 @@ h3 {
 
 .project-area h4 {
   text-align: center;
-  color: rgb(34, 31, 31);
+  color: rgb(0, 0, 0);
+  font-style: italic;
+  font-weight: 500;
   font-size: 20px;
   margin-block: 8px;
 }
@@ -368,6 +369,13 @@ h3 {
   padding-block: 16px;
   background-color: rgb(240, 239, 244);
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.project p {
+  font-size: 17px;
+  color: rgb(0, 0, 0);
+  font-style: italic;
+  font-weight: 200;
 }
 
 /* tags */
@@ -476,7 +484,7 @@ h3 {
   width: 32px;
   height: 32px;
   margin: 0px;
-  opacity: 0; /* İlk başta görünmez */
+  opacity: 0;
   animation-fill-mode: forwards;
 }
 
@@ -484,7 +492,6 @@ h3 {
   position: absolute;
   content: "?";
   color:rgb(0, 0, 0);
-
   width:32px;
   height:32px;
   display:inline-block;
@@ -665,6 +672,7 @@ h3 {
   color: rgb(17, 4, 204);
   padding: 8px;
   border: 2px solid rgb(20, 0, 107);
+  transition: transform 0.3s ease;
 }
 
 /* resume area  end*/
@@ -745,6 +753,10 @@ footer {
 
   .certificate-area {
     margin-inline: 64px;
+  }
+
+  .carousel-text2 {
+    margin-left: 540px;
   }
   
   
@@ -893,6 +905,11 @@ footer {
 
   .resume-area a {
     font-size: 24px;
+    transition: transform 0.3s ease;
+  }
+
+  .resume-area a:hover {
+    transform: scale(1.1);
   }
 
   .upper-footer p {
