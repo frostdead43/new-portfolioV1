@@ -220,10 +220,10 @@ a {
 
 
 .carousel-text {
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(255, 255, 255, 0.6);
   position: absolute;
   top: 25%;
-  margin-inline: 16px;
+  margin-inline: 20px;
   font-size: 18px;
   overflow: hidden;
   letter-spacing: 2px;
@@ -234,7 +234,7 @@ a {
 }
 
 .carousel-text2 {
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(255, 255, 255, 0.6);
   position: absolute;
   top: 60%;
   margin-left: 160px;
@@ -853,7 +853,7 @@ footer {
   }
 
   .certificate-area {
-    margin-inline: 100px;
+    margin-inline: 160px;
     margin-block: 100px;
   }
 
